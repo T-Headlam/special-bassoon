@@ -1,15 +1,21 @@
 ﻿using System;
+using Login.Api.Model.Enum;
+
 namespace Login.Api.Model
 {
 	public class User
 	{
-		public string? FristName { get; set; }
+		public int Id { get; set; }
+
+		public string? FirstName { get; set; }
 
 		public string? LastName { get; set; }
 
-		public Contact Contact { get; set; } = new Contact();
+		public string? UserName { get; set; }
 
-		public Address Address { get; set; } = new Address();
+		public Role Role { get; set; }
+
+		public string? Password { get; set; }
 	}
 }
 
